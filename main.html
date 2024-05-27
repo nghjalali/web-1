@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .alert {
+        padding: 20px;
+        background-color: rgba(3, 3, 211, 0.541);
+        color: white;
+        width: 40%;
+        margin: 10px;
+        position: relative;
+      }
+      .closebtn {
+        position: absolute;
+        right: 10px;
+        color: rgb(250, 246, 246);
+        background-color: black;
+      }
+      .alert .error {
+        position: absolute;
+        left: 7px;
+      }
+      .alert .test {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="alert">
+      <span class="error material-symbols-outlined"> error </span>
+      <span class="closebtn" onclick="this.parentElement.style.display='none';"
+        >&times;</span
+      >
+      <p class="test">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    </div>
+  </body>
+</html>
